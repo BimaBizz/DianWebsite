@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .background-radial-gradient {
+        background-color: transparent;
+        background-image: radial-gradient(
+          650px circle at 0% 0%,
+          hsla(322, 80%, 50%, 0.500) 15%,
+          hsla(322, 80%, 45%, 0.500) 35%,
+          hsla(322, 80%, 40%, 0.500) 75%,
+          hsla(322, 80%, 35%, 0.500) 80%,
+          transparent 100%
+        ),
+        radial-gradient(
+          500px circle at 100% 20%,
+          hsla(322, 80%, 50%, 0.800) 15%,
+          hsla(322, 80%, 45%, 0.700) 35%,
+          hsla(322, 80%, 40%, 0.600) 75%,
+          hsla(322, 80%, 39%, 0.500) 80%,
+          transparent 100%
+        );
+      }
+}
